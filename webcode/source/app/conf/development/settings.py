@@ -72,8 +72,14 @@ DEFAULT_FROM_EMAIL = 'test@example.com'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        #'ENGINE': 'django.db.backends.sqlite3',
+        #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+		'ENGINE': 'django.db.backends.mysql',
+		'NAME': 'bde_db',
+		'USER': 'dbe_admin',
+		'PASSWORD': 'RedPotato9!',
+		'HOST': 'tradingsim-db.cfqy2smqdswg.us-east-1.rds.amazonaws.com',
+		'PORT': '3306',
     }
 }
 
